@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoorv Saxena's Portfolio</title>
+    <style>
+        body {
+            background-image: url("stars.jpg");
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            background-size:cover;
+        }
+
+        header {
+            backdrop-filter: blur(5px);
+            z-index: 1;
+            position: sticky;
+            top: 0;
+            background-color: #00000065;
+            padding: 15px;
+            color: #ececec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .name {
+            padding: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 0px;
+            border-color: #00000065;
+        }
+
+        .nav-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0057b4;
+            transition: 0.2s ease;
+        }
+
+        .content {
+            backdrop-filter: blur(2px);
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #0000006d;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .division-line {
+            border-bottom: 2px solid #ececec;
+            margin: 20px 0;
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+            color: #ececec;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff5a;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+        }
+
+        .project-card {
+            text-align: center;
+            background-size: cover;
+            height: 160px;
+            width: 40%;
+            margin-bottom: 40px;
+            padding: 15px;
+            border: none;
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            filter: blur(4px) ;
+            transition: 0.3s ease;
+        }
+
+        .project-card h1{
+            color: #000000;
+        }
+        #card1
+        {
+            background-image: url('vidsense.png');
+        }
+
+        #card2
+        {
+            background-image: url('mimir.png');
+        }
+
+        #card3
+        {
+            background-image: url('amigo.jpg');
+        }
+
+        #card4
+        {
+            background-image: url('');
+        }
+
+        #card5
+        {
+            background-image: url('weather.png');
+        }
+
+        #card6
+        {
+            background-image: url('ldd.png');
+        }
+
+        .project-card:hover{
+            filter: blur(1px);
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="name">Apoorv Saxena.</span>
+        </div>
+        <div class="nav-links">
+            <a href="https://www.linkedin.com/in/apoorvsxna/">LinkedIn</a>
+            <a href="https://www.github.com/apoorvsxna">GitHub</a>
+            <a href="resume.pdf">Résumé</a>
+            <a href="#">About Me</a>
+            <a href="#">Complementary</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Hi. I'm Apoorv.</h1>
+        <h2>and this page is currently under construction.</h2>
+        <h3 style="color: #ffffff5a;">The links are functional though.</h3>
+        <div class="division-line"></div>
+
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card" id="card1">
+            </div>
+            <div class="project-card" id="card2">
+                
+            </div>
+            <div class="project-card" id="card3">
+                <!-- Project 3 content -->
+            </div>
+            <div class="project-card" id="card4">
+                <!-- Project 4 content -->
+            </div>
+            <div class="project-card" id="card5">
+                <!-- Project 5 content -->
+            </div>
+            <div class="project-card" id="card6">
+                <!-- Project 6 content -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
