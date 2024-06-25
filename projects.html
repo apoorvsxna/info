@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Projects</title>
+    <title>Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -85,11 +86,9 @@
             width: 100%;
             height: 200px;
             background-color: #3a3a3a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: #64ffda;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         
         .project-info {
@@ -109,14 +108,14 @@
         
         .project-links {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
         }
         
         .project-link {
             color: #64ffda;
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-size: 1.2rem;
+            margin-left: 15px;
             transition: color 0.3s ease;
         }
         
@@ -130,52 +129,52 @@
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Tech Skills</a></li>
+                <li><a href="projects.html">Projects/Open-Source</a></li>
+                <li><a href="connect.html">Connect</a></li>
             </ul>
         </div>
     </nav>
 
     <header>
         <div class="container">
-            <h1>My Projects</h1>
+            <h1>Projects</h1>
         </div>
     </header>
 
     <main class="container">
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">Project 1</div>
+                <div class="project-image" style="background-image: url('mimir.png');"></div>
                 <div class="project-info">
-                    <h3 class="project-title">Machine Learning Algorithm</h3>
-                    <p class="project-description">Developed a machine learning algorithm for image classification using TensorFlow.</p>
+                    <h3 class="project-title">Mimir: Remote Control</h3>
+                    <p class="project-description">A multi-purpose remote control utility to control your PC using another device such as a phone, or even another PC over a common network.</p>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Details</a>
-                        <a href="#" class="project-link">GitHub</a>
+                        <a href="https://github.com/apoorvsxna/Mimir" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="https://apoorvsxna.github.io/Mimir/" class="project-link"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">Project 2</div>
+                <div class="project-image" style="background-image: url('vidsense.png');"></div>
                 <div class="project-info">
-                    <h3 class="project-title">Web Application</h3>
-                    <p class="project-description">Built a full-stack web application using React, Node.js, and MongoDB.</p>
+                    <h3 class="project-title">VidSense</h3>
+                    <p class="project-description">An application that gives you answers and summaries based on a video lecture/meeting. Also includes an extension for YouTube.</p>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Details</a>
-                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="https://github.com/apoorvsxna/VidSense---DU-Hacks3.0" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="https://microsoftedge.microsoft.com/addons/detail/vidsense/hpeglfbegkgmblnbimamjfgmnbjpmnam" class="project-link"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">Project 3</div>
+                <div class="project-image" style="background-image: url('runtime.png');"></div>
                 <div class="project-info">
-                    <h3 class="project-title">Mobile App</h3>
-                    <p class="project-description">Developed a cross-platform mobile app using Flutter and Firebase.</p>
+                    <h3 class="project-title">RunTime</h3>
+                    <p class="project-description">A website containing multiple tools to make your YouTube experience more convenient.</p>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Details</a>
-                        <a href="#" class="project-link">App Store</a>
+                        <a href="https://github.com/apoorvsxna/youtube-playlist-length" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="https://apoorvsxna.github.io/youtube-playlist-length/" class="project-link"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
             </div>
