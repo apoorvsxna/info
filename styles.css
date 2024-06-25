@@ -59,7 +59,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url('path_to_your_image.jpg');
+  background-image: url('profile.jpg');
   background-size: cover;
   background-position: center;
   margin: 0 auto 20px;
@@ -77,19 +77,43 @@ p {
   margin: 0 auto 15px;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .cta-button {
   display: inline-block;
   background-color: #64ffda;
   color: #1e1e1e;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-top: 20px;
   transition: background-color 0.3s ease;
+  width: 10rem;
+  text-align: center;
 }
 
 .cta-button:hover {
-  background-color: #45e0ba;
+  background-color: #30bb9a;
+}
+
+.rainbow-text {
+  font-style: italic;
+  color: white;
+  transition: 0.4s;
+  background-size: 200% auto;
+}
+
+.rainbow-text:hover {
+  background-image: linear-gradient(to right, red, orange, yellow);
+  background-clip: text;
+  color: transparent;
+  background-position: center;
+  transition: 0.4s;
 }
