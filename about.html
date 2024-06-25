@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 20px 0;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #64ffda;
+        }
+        
+        header {
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: start;
+            padding-bottom: 60px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #64ffda;
+        }
+        
+        .bio h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #64ffda;
+        }
+        
+        .bio p {
+            margin-bottom: 20px;
+        }
+        
+        .education, .interests {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .education h3, .interests h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #64ffda;
+        }
+        
+        .education ul, .interests ul {
+            list-style-type: none;
+        }
+        
+        .education li, .interests li {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-image {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>About Me</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="about-content">
+            <div class="profile-image">
+                Profile Image
+            </div>
+            <div class="bio">
+                <h2>Hello, I'm John Doe</h2>
+                <p>I'm a passionate Computer Science and Engineering student with a keen interest in software development and artificial intelligence. My goal is to leverage technology to solve real-world problems and make a positive impact on society.</p>
+                <p>Throughout my academic journey, I've developed a strong foundation in various programming languages and technologies. I'm always eager to learn new skills and take on challenging projects that push me out of my comfort zone.</p>
+                
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>B.S. in Computer Science and Engineering, XYZ University (Expected graduation: 2025)</li>
+                        <li>High School Diploma, ABC High School (2021)</li>
+                    </ul>
+                </div>
+                
+                <div class="interests">
+                    <h3>Interests & Achievements</h3>
+                    <ul>
+                        <li>Finalist in the National Coding Competition 2023</li>
+                        <li>Active member of the university's AI and Robotics Club</li>
+                        <li>Passionate about open-source contributions and hackathons</li>
+                        <li>Enjoy solving complex algorithmic problems in my free time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
