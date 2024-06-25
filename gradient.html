@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .rainbow-text {
+        background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        background-size: 200% auto;
+        background-clip: text;
+        color: transparent;
+        transition: background-position 0.5s;
+    }
+
+    .rainbow-text:hover {
+        background-position: right center;
+    }
+</style>
+</head>
+<body>
+    <h1 class="rainbow-text">Hover over me!</h1>
+</body>
+</html>
